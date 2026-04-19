@@ -1,0 +1,147 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9fafb;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       /* horizontal centering */
+  text-align: center;
+
+  height: 60vh;
+
+  background: linear-gradient(135deg, #a5d8ff, #d0bfff);
+  color: white;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* About */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Experience */
+.experience .job {
+  margin-top: 20px;
+}
+
+.job span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #e5e7eb;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/* Projects */
+.projects-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1 1 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #374151;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+  }
+}
